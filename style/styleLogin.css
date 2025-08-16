@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+:root {
+  --cream: #ece6dc; /* warm cream */
+  --text-color: #8f4122; /* text */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+a{
+text-decoration: none;
+}
+/* simple pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.95;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* navbar */
+.navbar {
+  background-color: #f5f0e1b6;
+  border-bottom: 4px solid #f59f0a;
+}
+/*navbar button */
+.btn-create {
+  color: #fff;
+  background-color: #f59f0a;
+  border-color: #f59f0a !important;
+}
+.btn-login {
+  color: #f59f0a;
+  border-color: #f59f0a;
+}
+.navbar .btn-login:hover {
+  border-radius: 30px;
+  background-color: #f59f0a;
+}
+.navbar .btn-create:hover {
+  color: #f59f0a;
+  border-radius: 30px;
+  border-color: #f59f0a;
+}
+
+/* home */
+.home {
+  height: auto;
+  background-color: var(--cream);
+}
+.body-form {
+  border-radius: 20px;
+  background: #ebc938;
+  background: #ffc259;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 194, 89, 1) 30%,
+    rgba(143, 65, 34, 1) 100%
+  );
+}
+.home img {
+  height: 750px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  background-color: #f5f0e1;
+  border: #f5f0e1;
+}
+.super-titel h2 {
+  font-size: 45px;
+  color: rgb(68, 44, 0);
+}
+.body-form .form-label {
+  font-size: 20px;
+  color: rgb(68, 44, 0);
+}
+.body-form button {
+  position: relative;
+  z-index: 2;
+  background-color: rgb(68, 44, 0);
+  color: #fcfcfc;
+  box-shadow: 0 8px 18px rgba(178, 34, 34, 0.16);
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: pulse 3s ease-in-out infinite;
+}
+.body-form button:hover {
+    color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(178, 34, 34, 0.2);
+}
+.body-form a {
+color: #ffffff;
+  background-color: rgb(68, 44, 0);
+}
+.body-form a:hover {
+    color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(178, 34, 34, 0.2);
+}
+
+/* icon Footer */
+.icon{
+  height:auto;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+.icon h2{
+    color: #000;
+  font-size: 20px;
+}
